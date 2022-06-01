@@ -121,7 +121,7 @@ function verifyLand(uint landID)public OnlylandInspector() {
     regMapping [landID].verification =  verificationStatus.verified;}
     address public owner;
     modifier OnlyOwner(){
-    require(owner==msg.sender,"you are not buyer");
+    require(owner==msg.sender,"you are not owner");
     _;  
     }
 
